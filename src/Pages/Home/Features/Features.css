@@ -1,0 +1,29 @@
+.features {
+    color: var(--primary);
+    margin-bottom: 140px;
+}
+
+.features h1.outside {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    margin-bottom: 14px;
+    color: #151531;
+}
+
+.features .outside {
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    color: rgba(21, 21, 49, 0.8);
+    margin-bottom: 40.59px;
+    /* width: 437px; */
+}
+
+.card__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+}

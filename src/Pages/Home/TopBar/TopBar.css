@@ -1,0 +1,52 @@
+.topbar {
+    margin-top: 86.2px;
+    margin-bottom: 100px;
+}
+
+.topbar .content {
+    text-align: center;
+}
+.topbar h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    margin-bottom: 14px;
+    color: #151531;
+}
+
+.topbar p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    color: rgba(21, 21, 49, 0.8);
+    margin-bottom: 40.59px;
+    /* width: 437px; */
+}
+
+.btn-primary {
+    padding: 18px 32px 17px 32px;
+    background: #9d0aff;
+    border-radius: 18px;
+    color: white;
+    border: none;
+}
+
+.hero-img {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.topbar .medium-title {
+    margin-top: 125px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.topbar .company__logo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 176px;
+    margin-right: 176px;
+}

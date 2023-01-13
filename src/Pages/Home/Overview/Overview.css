@@ -1,0 +1,102 @@
+.overview {
+    display: grid;
+    justify-content: center;
+}
+
+.overview__content {
+    padding: 80px 240px;
+    width: 1080px;
+    height: 538.95px;
+    background: #151531;
+    border-radius: 32px;
+}
+
+.overview h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67px;
+    margin-bottom: 12.37px;
+}
+
+.overview p {
+    text-align: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 60.59px;
+}
+
+.box__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 128.98px;
+    padding: 30px 34px;
+    background: rgba(255, 250, 255, 0.1);
+    border-radius: 30px;
+}
+
+.overview .number {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 34px;
+    /* margin-top: 29px;
+    margin-left: 74.86px; */
+}
+
+.overview .text {
+    display: block;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    /* margin-top: 29.8px;
+    margin-left: 66.09px; */
+}
+
+.box {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.divider {
+    border-width: 0px 1px;
+    border-style: solid;
+    border-color: rgba(255, 250, 255, 0.1);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.overview__wrapper .opportunity {
+    margin-top: 160px;
+    margin-bottom: 140px;
+}
+.overview__wrapper .content1 {
+    display: flex;
+    align-items: center;
+
+    color: var(--primary);
+    margin-left: 4rem;
+    margin-bottom: 67px;
+}
+.overview__wrapper .logo {
+    margin-right: 12px;
+}
+.overview__wrapper .content2 {
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+    margin-left: 8rem;
+}
+
+.overview__wrapper .text {
+    margin-right: 40px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}

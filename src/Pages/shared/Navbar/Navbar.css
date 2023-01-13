@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 92.8px;
+}
+
+.brand__logo {
+    margin-top: 29.73px;
+    width: 119.98px;
+    height: 33.33px;
+}
+
+nav .pages {
+    display: flex;
+    align-items: center;
+}
