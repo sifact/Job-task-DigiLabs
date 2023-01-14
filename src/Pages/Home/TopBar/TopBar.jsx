@@ -12,10 +12,10 @@ const TopBar = () => {
     return (
         <section className="topbar">
             <div className="content">
-                <h1>Save more and get your </h1>
-                <h1>finances right</h1>
+                <h1 className="section__title">Save more and get your </h1>
+                <h1 className="section__title">finances right</h1>
 
-                <p>
+                <p className="section__p">
                     Orci molestie nam vulputate nunc habitant gravida. Interdum{" "}
                     <br />
                     vitae vivamus ipsum aliquet consectetur aliquam.

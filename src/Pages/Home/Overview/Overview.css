@@ -1,6 +1,7 @@
 .overview {
     display: grid;
     justify-content: center;
+    color: var(--pure);
 }
 
 .overview__content {

@@ -6,7 +6,7 @@
 .topbar .content {
     text-align: center;
 }
-.topbar h1 {
+h1.section__title {
     font-size: 60px;
     font-weight: 700;
     line-height: 72px;
@@ -14,7 +14,7 @@
     color: #151531;
 }
 
-.topbar p {
+p.section__p {
     font-weight: 500;
     font-size: 15px;
     line-height: 21px;

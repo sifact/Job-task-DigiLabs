@@ -1,0 +1,29 @@
+.support {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-gap: 2rem;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    align-items: center;
+}
+
+.support .support__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.support .internal__card {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.single__card {
+    display: flex;
+    align-items: center;
+}
+
+.support .card {
+    padding: 32px;
+}

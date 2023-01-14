@@ -6,7 +6,7 @@
     --primary: #151531;
     --secondary: #9d0aff;
     --pure: #ffffff;
-    --tertiary: #fffaff;
+    --tertiary: ;
 }
 
 * {
@@ -16,7 +16,7 @@
 }
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
-    color: var(--tertiary);
+    background: #fffaff;
 }
 
 html {

@@ -1,0 +1,42 @@
+.review {
+    text-align: center;
+}
+
+.review .card__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.review p {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 29px;
+    padding-bottom: 25.37px;
+}
+.review h3 {
+    padding-top: 27px;
+    padding-bottom: 7px;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+.review__card {
+    text-align: start;
+    width: 520px;
+    height: 289.97px;
+
+    background: #ffffff;
+    box-shadow: 1px 1px 80px rgba(21, 21, 49, 0.05);
+    border-radius: 30px;
+    padding: 40px 32px;
+}
+
+.review span {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}

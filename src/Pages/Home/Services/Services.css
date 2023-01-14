@@ -1,0 +1,28 @@
+.services {
+    color: var(--primary);
+}
+
+.services__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8rem;
+    margin-bottom: 100px;
+}
+
+.services .service__content > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.services .service__content img {
+    width: 24px;
+    margin-right: 12px;
+}
+.services .service__content span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--primary);
+}
