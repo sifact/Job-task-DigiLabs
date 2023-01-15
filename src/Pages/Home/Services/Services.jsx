@@ -11,7 +11,10 @@ const Services = () => {
     return (
         <section className="services container">
             <div className="services__wrapper">
-                <img src={img1} alt="" />
+                <div style={{ textAlign: "center" }}>
+                    <img className="section_img" src={img1} alt="" />
+                </div>
+
                 <div className="service__content">
                     <h1 className="section__title">Manage and Track </h1>
                     <h1 className="section__title">Your Projects</h1>
@@ -19,6 +22,7 @@ const Services = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Suspendisse varius enim in eros elementum tristique.
                     </p>
+
                     <div>
                         <img src={icon3} alt="" />
                         <span>Create posts, reels and stories.</span>
@@ -54,10 +58,15 @@ const Services = () => {
                         <span>Schedule any Twitter posts.</span>
                     </div>
                 </div>
-                <img src={img2} alt="" />
+                <div style={{ textAlign: "center" }}>
+                    <img className="section_img" src={img2} alt="" />
+                </div>
             </div>
             <div className="services__wrapper">
-                <img src={img3} alt="" />
+                <div style={{ textAlign: "center" }}>
+                    <img className="section_img" src={img3} alt="" />
+                </div>
+
                 <div className="service__content">
                     <h1 className="section__title">Simple financial </h1>
                     <h1 className="section__title">overview for you</h1>

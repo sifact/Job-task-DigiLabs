@@ -22,7 +22,7 @@ const data2 = [
 const Overview = () => {
     return (
         <section className="overview__wrapper">
-            <div className="overview">
+            <div className="overview container">
                 <div className="overview__content">
                     <h1>
                         A nice and simple <br /> financial overview
@@ -35,15 +35,21 @@ const Overview = () => {
                     <div className="box__wrapper">
                         <div className="box">
                             <span className="number">120+</span>
-                            <span className="text">Useful widgets</span>
+                            <span style={{ margin: "0" }} className="text">
+                                Useful widgets
+                            </span>
                         </div>
                         <div className="box divider">
                             <span className="number">20+</span>
-                            <span className="text">Integrations</span>
+                            <span style={{ margin: "0" }} className="text">
+                                Integrations
+                            </span>
                         </div>
                         <div className="box">
                             <span className="number">65+</span>
-                            <span className="text">Features out</span>
+                            <span style={{ margin: "0" }} className="text">
+                                Features out
+                            </span>
                         </div>
                     </div>
                 </div>

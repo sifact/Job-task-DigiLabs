@@ -23,12 +23,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.container {
-    max-width: calc(100vw - 232px);
-    margin-left: auto;
-    margin-right: auto;
-}
-
 nav .pages {
     display: flex;
     gap: 2.62rem;
@@ -38,4 +32,58 @@ nav .pages a {
     text-decoration: none;
     color: #151531;
     font-size: 15px;
+}
+
+.btn-primary {
+    padding: 18px 32px 17px 32px;
+    background: #9d0aff;
+    border-radius: 18px;
+    color: white;
+    border: none;
+}
+
+.btn-secondary {
+    padding: 18px 32px 17px 32px;
+    background: transparent;
+    border-radius: 18px;
+    color: white;
+    border: 2px solid var(--secondary);
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1270px) {
+    .container {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .container {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 30px !important;
+        line-height: 30px !important;
+    }
+}
+@media screen and (max-width: 350px) {
+    .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 }

@@ -4,10 +4,10 @@ import { AiFillStar } from "react-icons/ai";
 
 const Reviews = () => {
     return (
-        <section className="review">
+        <section className="review container">
             <div className="section__wrapper">
-                <h1 className="section__title">Don’t take our words for i</h1>
-                <h1 className="section__title">t - listen to our clients</h1>
+                <h1 className="section__title">Don’t take our words for </h1>
+                <h1 className="section__title">it - listen to our clients</h1>
                 <p className="section__p">
                     Orci molestie nam vulputate nunc habitant gravida. Interdum{" "}
                     <br /> vitae vivamus ipsum aliquet consectetur aliquam.

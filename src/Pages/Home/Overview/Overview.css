@@ -6,8 +6,8 @@
 
 .overview__content {
     padding: 80px 240px;
-    width: 1080px;
-    height: 538.95px;
+    /* width: 1080px; */
+    /* height: 538.95px; */
     background: #151531;
     border-radius: 32px;
 }
@@ -34,7 +34,7 @@
 .box__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 600px;
+    /* width: 600px; */
     height: 128.98px;
     padding: 30px 34px;
     background: rgba(255, 250, 255, 0.1);
@@ -62,6 +62,7 @@
 .box {
     padding-left: 40px;
     padding-right: 40px;
+    text-align: center;
 }
 
 .divider {
@@ -70,6 +71,7 @@
     border-color: rgba(255, 250, 255, 0.1);
     padding-left: 50px;
     padding-right: 50px;
+    text-align: center;
 }
 
 .overview__wrapper .opportunity {
@@ -100,4 +102,76 @@
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+    .overview__content {
+        padding: 80px 50px;
+
+        border-radius: 32px;
+    }
+
+    .opportunity {
+        display: none;
+    }
+
+    .overview__content {
+        margin-bottom: 140px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .overview {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        color: var(--pure);
+    }
+
+    .box__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 600px; */
+        /* height: 128.98px; */
+        height: auto;
+        padding: 30px 34px;
+        background: rgba(255, 250, 255, 0.1);
+        border-radius: 30px;
+    }
+    .overview .text {
+        margin: 0;
+    }
+    .box {
+        margin-bottom: 26px;
+        padding: 0;
+        text-align: center;
+    }
+    .divider {
+        border: none;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topbar .company__logo {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .topbar .company__logo {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .topbar .company__logo {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

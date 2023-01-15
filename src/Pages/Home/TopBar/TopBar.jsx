@@ -10,7 +10,7 @@ import logo6 from "../../../assets/logo6.png";
 
 const TopBar = () => {
     return (
-        <section className="topbar">
+        <section className="topbar container">
             <div className="content">
                 <h1 className="section__title">Save more and get your </h1>
                 <h1 className="section__title">finances right</h1>

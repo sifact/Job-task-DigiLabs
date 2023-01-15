@@ -27,3 +27,45 @@
 .support .card {
     padding: 32px;
 }
+
+@media screen and (max-width: 1200px) {
+    .support {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .support .support__content {
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .support {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .support .support__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .support__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 350px) {
+}
