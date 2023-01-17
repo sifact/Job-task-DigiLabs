@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import About from "../Pages/About/About";
+import AdminDashboard from "../Pages/AdminDashboard/AdminDashboard";
 import Blog from "../Pages/Blog/Blog";
 import Careers from "../Pages/Careers/Careers";
 import Contact from "../Pages/Contact/Contact";
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
             {
                 path: "/register",
                 element: <Register />,
+            },
+            {
+                path: "/admin",
+                element: <AdminDashboard />,
             },
         ],
     },

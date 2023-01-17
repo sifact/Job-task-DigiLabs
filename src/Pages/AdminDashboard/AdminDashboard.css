@@ -1,0 +1,44 @@
+section.admin {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+section.admin h2 {
+    margin-bottom: 1rem;
+}
+
+.form-input {
+    margin-bottom: 2rem !important;
+}
+
+.admin__form {
+    width: 400px;
+}
+
+.form-input {
+    width: 100%;
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: var(--container-color);
+    color: var(--text-color-dark);
+    outline: none;
+    /* // border: none; */
+    border-radius: 0.2rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 17px;
+    font-family: "Exo 2", sans-serif;
+}
+
+.counter {
+    padding: 2rem !important;
+    margin-top: 1.5rem;
+    color: var(--pure);
+}
+
+section.admin .box__wrapper {
+    justify-content: center;
+}

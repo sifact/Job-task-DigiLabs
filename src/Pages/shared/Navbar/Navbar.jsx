@@ -43,6 +43,7 @@ const Navbar = () => {
                 <Link to="/pricing">Pricing</Link>
                 <Link to="/careers">Careers</Link>
                 <Link to="/contact">Contact</Link>
+                <Link to="/admin">Dashboard</Link>
                 <Link
                     to="/about"
                     style={{
