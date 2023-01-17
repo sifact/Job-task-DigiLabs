@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import img from "../../../assets/brand.svg.png";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { AuthContext } from "../../../Contexts/AuthProvider";
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
     const [open, setOpen] = useState(false);
+
+    const handleSignOut = () => {
+        logOut()
+            .then(() => {})
+            .catch((e) => console.log(e.message));
+    };
 
     return (
         <nav className="nav__wrapper container">
@@ -54,20 +62,32 @@ const Navbar = () => {
                     </span>{" "}
                     cart
                 </Link>
-                <Link
-                    className="btn-secondary"
-                    style={{ color: "var(--secondary)" }}
-                    to="/blog"
-                >
-                    Login
-                </Link>
-                <Link
-                    style={{ color: "var(--pure)", margin: "0" }}
-                    className="btn-primary"
-                    to="/pricing"
-                >
-                    Get started
-                </Link>
+                {user ? (
+                    <Link
+                        className="btn-secondary"
+                        style={{ color: "var(--secondary)" }}
+                        onClick={handleSignOut}
+                    >
+                        Log out
+                    </Link>
+                ) : (
+                    <>
+                        <Link
+                            className="btn-secondary"
+                            style={{ color: "var(--secondary)" }}
+                            to="/login"
+                        >
+                            Login
+                        </Link>
+                        <Link
+                            style={{ color: "var(--pure)", margin: "0" }}
+                            className="btn-primary"
+                            to="/register"
+                        >
+                            Register
+                        </Link>
+                    </>
+                )}
             </div>
         </nav>
     );

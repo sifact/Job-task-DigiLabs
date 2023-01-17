@@ -38,7 +38,9 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2.5rem;
     }
-
+    .btn__s .btn-primary {
+        margin-right: 0;
+    }
     .btn__s {
         grid-auto-flow: row;
     }

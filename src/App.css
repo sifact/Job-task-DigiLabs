@@ -5,8 +5,9 @@
 :root {
     --primary: #151531;
     --secondary: #9d0aff;
+    --secondary--dark: #7103bb;
     --pure: #ffffff;
-    --tertiary: ;
+    --tertiary: #fffaff;
 }
 
 * {
