@@ -37,10 +37,18 @@ nav .pages a {
 
 .btn-primary {
     padding: 18px 32px 17px 32px;
-    background: #9d0aff;
+    background: var(--secondary);
     border-radius: 18px;
     color: white;
-    border: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    border: 2px solid var(--secondary);
+    background: transparent;
+    color: var(--secondary);
 }
 
 .btn-secondary {
@@ -49,8 +57,15 @@ nav .pages a {
     border-radius: 18px;
     color: white;
     border: 2px solid var(--secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+.btn-secondary:hover {
+    border: 2px solid transparent;
+    background: var(--secondary);
+    color: var(--pure);
+}
 .container {
     max-width: 1280px;
     margin-left: auto;

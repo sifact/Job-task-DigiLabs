@@ -4,6 +4,8 @@ section.admin {
     align-items: center;
     margin-bottom: 4rem;
     margin-top: 3rem;
+    grid-auto-flow: column;
+    gap: 6rem;
 }
 
 section.admin h2 {
@@ -28,12 +30,13 @@ section.admin h2 {
     /* // border: none; */
     border-radius: 0.2rem;
     padding: 1rem;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
     font-size: 17px;
     font-family: "Exo 2", sans-serif;
 }
 
 .counter {
+    width: 300px;
     padding: 2rem !important;
     margin-top: 1.5rem;
     color: var(--pure);
@@ -41,4 +44,32 @@ section.admin h2 {
 
 section.admin .box__wrapper {
     justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+}
+@media screen and (max-width: 992px) {
+    section.admin {
+        grid-auto-flow: row;
+    }
+
+    .counter {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+    .counter {
+        width: auto !important;
+    }
+
+    .admin__form {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 350px) {
 }

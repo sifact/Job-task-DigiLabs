@@ -56,7 +56,7 @@ const Overview = () => {
             </div>
             <div className="opportunity">
                 <div className="content1">
-                    {data1.map((item) => {
+                    {data1.map((item, idx) => {
                         return (
                             <>
                                 <img className="logo" src={logo1} alt="" />

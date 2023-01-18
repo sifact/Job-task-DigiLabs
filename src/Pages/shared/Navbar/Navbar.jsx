@@ -1,14 +1,16 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { useQuery } from "@tanstack/react-query";
 import img from "../../../assets/brand.svg.png";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { AuthContext } from "../../../Contexts/AuthProvider";
 
 const Navbar = () => {
-    const { user, logOut } = useContext(AuthContext);
+    const { user, logOut, updateInfo } = useContext(AuthContext);
     const [open, setOpen] = useState(false);
+    const [data, setData] = useState({});
 
     const handleSignOut = () => {
         logOut()
@@ -20,7 +22,7 @@ const Navbar = () => {
         <nav className="nav__wrapper container">
             <div className="brand">
                 <Link to="/">
-                    <img className="brand__logo" src={img} alt="" />
+                    <img className="brand__logo" src={updateInfo.logo} alt="" />
                 </Link>
             </div>
             <div
@@ -43,7 +45,9 @@ const Navbar = () => {
                 <Link to="/pricing">Pricing</Link>
                 <Link to="/careers">Careers</Link>
                 <Link to="/contact">Contact</Link>
-                <Link to="/admin">Dashboard</Link>
+                {user?.email === "admin@gmail.com" && (
+                    <Link to="/admin">Admin Panel</Link>
+                )}
                 <Link
                     to="/about"
                     style={{
@@ -66,7 +70,7 @@ const Navbar = () => {
                 {user ? (
                     <Link
                         className="btn-secondary"
-                        style={{ color: "var(--secondary)" }}
+                        style={{ color: "var(--primary)" }}
                         onClick={handleSignOut}
                     >
                         Log out
@@ -75,13 +79,13 @@ const Navbar = () => {
                     <>
                         <Link
                             className="btn-secondary"
-                            style={{ color: "var(--secondary)" }}
+                            style={{ color: "var(--primary)" }}
                             to="/login"
                         >
                             Login
                         </Link>
                         <Link
-                            style={{ color: "var(--pure)", margin: "0" }}
+                            style={{ color: "var(--primary)", margin: "0" }}
                             className="btn-primary"
                             to="/register"
                         >
